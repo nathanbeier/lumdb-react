@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <Welcome text="Welcome to using Props"  />
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
@@ -17,5 +17,14 @@ class App extends Component {
     );
   }
 }
+
+class Welcome extends Component {
+  render() {
+    return (
+      <h1 className="App-title">{this.props.text}</h1>  
+    )
+  }
+}
+
 
 export default App;
