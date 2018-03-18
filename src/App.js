@@ -12,6 +12,11 @@ import './App.css';
 // Pulls from Movie.js
 import MoviesList from './MoviesList';
 
+
+const Test = ({ match }) => (
+  <h1>{match.params.id}</h1>
+);
+
 const App = () => (
   // JSX render method
   <Router>
@@ -32,6 +37,6 @@ const App = () => (
 
 export default App;
 
-const Test = ({ match }) => (
-  <h1>{match.params.id}</h1>
-);
+// const Test = ({ match }) => (
+//   <h1>{match.params.id}</h1>
+// );
