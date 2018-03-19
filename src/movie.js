@@ -15,6 +15,7 @@ const Movie = ({ movie }) => (
 
 export default Movie;
 
+
 Movie.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,

@@ -11,14 +11,9 @@ import './App.css';
 
 // Pulls from Movie.js
 import MoviesList from './MoviesList';
-
-
-const Test = ({ match }) => (
-  <h1>{match.params.id}</h1>
-);
+import MovieDetail from './MovieDetail';
 
 const App = () => (
-  // JSX render method
   <Router>
     <div className="App">
       <header className="App-header">
@@ -27,8 +22,8 @@ const App = () => (
         </Link>
       </header>
       <Switch>
-        <Route path="/:id" component={Test} />
         <Route exact path="/" component={MoviesList} />
+        <Route path="/:id" component={MovieDetail} />
       </Switch>
     </div>
   </Router>
@@ -36,7 +31,3 @@ const App = () => (
 
 
 export default App;
-
-// const Test = ({ match }) => (
-//   <h1>{match.params.id}</h1>
-// );
